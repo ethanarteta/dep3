@@ -28,9 +28,7 @@ pipeline {
         always {
           junit 'test-reports/results.xml'
         }
-       stage ('Deploy') {
-       steps {
-         sh '/var/lib/jenkins/.local/bin/eb deploy'
+       stage ('Deploy') { steps { sh '/var/lib/jenkins/.local/bin/eb deploy' } }
       }
     }
     
