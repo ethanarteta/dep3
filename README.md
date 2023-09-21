@@ -14,3 +14,14 @@ A new hire was tasked with updating the URL shortener. The new hire committed ve
 
 - Follow the in-class instructions
   
+# Post-Incident Report
+
+## Incident Summary
+
+### Reason for the Incident
+
+This incident occured due to an error in the "application.py" file where a change was made: by changing "json.load" to "json.loads" this caused an internal server error to occur. This disruption resulted in unexpected downtime of our service to Nike.
+
+### Duration of Downtime
+
+The downtime lasted for approximately 6 minutes as the version 2 of the application was rolled back to the stable state of version 1 and then redeployed. The downtime of the application is within the 20 minutes of downtime allowed within our SLA agreeement.
