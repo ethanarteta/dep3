@@ -32,7 +32,7 @@ The downtime lasted for approximately 6 minutes as the version 2 of the applicat
 
 2. **Isolation:** The first step was to isolate the new deployment and roll back to the previous version (version 1) of the URL shortener application. This was done to mitigate further disruptions and restore service stability.
 
-3. **Investigation:** A thorough investigation was conducted to identify the root cause of the incident. It was determined that the disruption was caused by a misconfiguration in the deployment process, specifically in the python code concerning "json.load".
+3. **Investigation:** A thorough investigation was conducted to identify the root cause of the incident. It was determined that the disruption was caused by a misconfiguration in the deployment process, specifically in "application.py. Upon review of the logs we discovered that line 20 had incorrect code "urls = json.loads(urls_file)" the correct code for this is "urls = json.load(urls_file)"
 
 4. **Resolution:** Once the root cause was identified and the misconfiguration was corrected only then did redeployment of version 2 begin. This time, it was successful without causing any further disruptions.
 
