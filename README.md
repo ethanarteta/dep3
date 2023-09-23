@@ -25,3 +25,27 @@ This incident occured due to an error in the "application.py" file where a chang
 ### Duration of Downtime
 
 The downtime lasted for approximately 6 minutes as the version 2 of the application was rolled back to the stable state of version 1 and then redeployed. The downtime of the application is within the 20 minutes of downtime allowed within our SLA agreeement.
+
+## Steps Taken to Resolve the Incident
+
+1. **Immediate Response:** As soon as the incident was detected, our team was given 15 minutes to find a solution to the incident.
+
+2. **Isolation:** The first step was to isolate the new deployment and roll back to the previous version (version 1) of the URL shortener application. This was done to mitigate further disruptions and restore service stability.
+
+3. **Investigation:** A thorough investigation was conducted to identify the root cause of the incident. It was determined that the disruption was caused by a misconfiguration in the deployment process, specifically in the python code concerning "json.load".
+
+4. **Resolution:** Once the root cause was identified, the misconfiguration was corrected, and the deployment of version 2 was redeployed. This time, it was successful without causing any further disruptions.
+
+## Incident Resolution
+
+The incident was eventually fully resolved after the successful deployment of version 2 of the application with the corrected configuration. The service has been restored to its normal operational state, and there have been no subsequent disruptions.
+
+## Preventative Measures
+
+To prevent a similar incident from happening in the future and to ensure we meet our SLA commitments:
+
+1. **Improved Deployment Process:** We will review and enhance our deployment process to include stricter validation checks and a private testing environment to test the web server before deployment. This will reduce the risk of misconfigurations causing downtime.
+
+2. **Enhanced Monitoring:** We will implement enhanced monitoring and alerting systems that can quickly detect any anomalies during deployment or application performance (Datadog). This will allow us to respond proactively to potential issues before they result in downtime.
+
+3. **Training and Documentation:** We will provide additional training to our development and operations teams on best practices for deployment and configuration management. Clear documentation will also be made available to ensure everyone is aligned on deployment procedures.
