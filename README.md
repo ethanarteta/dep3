@@ -34,11 +34,11 @@ The downtime lasted for approximately 6 minutes as the version 2 of the applicat
 
 3. **Investigation:** A thorough investigation was conducted to identify the root cause of the incident. It was determined that the disruption was caused by a misconfiguration in the deployment process, specifically in the python code concerning "json.load".
 
-4. **Resolution:** Once the root cause was identified, the misconfiguration was corrected, and the deployment of version 2 was redeployed. This time, it was successful without causing any further disruptions.
+4. **Resolution:** Once the root cause was identified and the misconfiguration was corrected only then did redeployment of version 2 begin. This time, it was successful without causing any further disruptions.
 
 ## Incident Resolution
 
-The incident was eventually fully resolved after the successful deployment of version 2 of the application with the corrected configuration. The service has been restored to its normal operational state, and there have been no subsequent disruptions.
+The incident was eventually fully resolved after the successful deployment of version 2 of the application with the corrected configuration. The service has been restored to its normal operational state, and there have been no subsequent disruptions or downtime.
 
 ## Preventative Measures
 
